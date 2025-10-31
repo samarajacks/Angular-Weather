@@ -3,7 +3,7 @@
 > Uma aplicação desenvolvida com **Angular 17**, utilizando o **AppModule**, que consome a API do [OpenWeatherMap](https://openweathermap.org/) para exibir a **previsão do tempo em tempo real**.
 
 > 🎯 **Confira o projeto online:**  
-> 👉 [**Acessar Weather**](https://angular-weather-nu.vercel.app/weather-home)
+> 👉 [**Acessar Weather**](https://angular-weather-omega-lime.vercel.app)
 ---
 
 ## 🧠 Sobre o Projeto
