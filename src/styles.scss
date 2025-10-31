@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue-1: #2242c2;
+    --blue-2: #0368ec;
+    --white: #fff;
+    --grey-1: #ededed;
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-light: rgba(255, 255, 255, 0.277);
+
+    --ice-blue: #E8F3F9;
+    --blue-gray: #dae5ed;
+    --light-blue-gray: #beccd4;
+    --dark-navy-blue: #203852;
+    --steel-blue: #4C6784;
+    --stale-blue: #637E9B;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--ice-blue);
+    display: flex;
+    flex-direction: column;
+  }
+
+  fa-icon {
+    color: var(--steel-blue);
+  }
+

@@ -1,0 +1,125 @@
+.container {
+  width: 60vw;
+  margin: 2.5rem auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  .upper-data {
+    position: relative;
+    overflow: hidden;
+    height: 82vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // mantém a proporção sem distorcer
+      filter: brightness(0.9);
+    }
+
+    .weather-data {
+      position: relative;
+      z-index: 1;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
+      .location {
+        font-size: 2em;
+      }
+
+      .temperature {
+        font-size: 6em;
+        font-weight: 900;
+      }
+    }
+
+    .lower-data {
+      padding: 3em;
+      margin: 0 2em 2em 2em;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      border-radius: 20px;
+      height: 40%;
+      align-items: center;
+      background-color: rgba(15, 15, 15, 0.4784313725);
+      justify-content: center;
+
+      .more-info-container {
+        display: flex;
+        gap: 3em;
+        flex-wrap: wrap;
+
+        .info-block {
+          flex: 1 1 calc(50% - 1em);
+          display: flex;
+          color: var(--ice-blue);
+          font-size: 1.5em;
+          align-items: flex-end;
+
+          .info-block-label {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            fa-icon {
+              color: var(--ice-blue);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+
+    .upper-data {
+      height: 77vh;
+      border-radius: 0;
+
+      .weather-data {
+        .location {
+          font-size: 1.5em;
+        }
+
+        .temperature {
+          font-size: 5em
+        }
+      }
+
+      .lower-data {
+        height: 49%;
+        padding: 2em;
+
+        .more-info-container {
+          .info-block {
+            font-size: 1.1em;
+
+            .info-block-label {
+              width: 62%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
